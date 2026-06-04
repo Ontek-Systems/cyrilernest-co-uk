@@ -233,28 +233,19 @@
 
         <div class="flex flex-col gap-5 xl:gap-8 reveal reveal-up w-full" style="transition-delay:100ms;">
             <div class="w-full rounded-2xl sm:rounded-[1.5rem] overflow-hidden border border-brand-dark/10 relative h-[400px] md:h-[500px] lg:h-[600px]">
-                <div id="map-placeholder" class="w-full h-full bg-gray-50 flex flex-col items-center justify-center gap-3 cursor-pointer group" onclick="loadSvcMap()" role="button" tabindex="0" aria-label="Load interactive map of Kent" onkeydown="if(event.key==='Enter'||event.key===' ')loadSvcMap()">
-                    <svg class="w-12 h-12 text-brand-dark/25 group-hover:text-[#df5164] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    <span class="font-body font-semibold text-brand-dark/40 group-hover:text-[#df5164] transition-colors duration-300 text-sm tracking-wide">Click to load interactive map</span>
-                    <span class="font-body text-xs text-brand-dark/25">Loading connects to Google Maps</span>
-                </div>
+                <div id="map-svc" class="w-full h-full z-0 relative"></div>
             </div>
         </div>
-
-
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script>
-        function loadSvcMap() {
-            var ph = document.getElementById('map-placeholder');
-            if (!ph) return;
-            var f = document.createElement('iframe');
-            f.width = '100%'; f.height = '100%';
-            f.src = 'https://maps.google.com/maps?q=Kent,+UK&t=&z=9&ie=UTF8&iwloc=&output=embed';
-            f.frameBorder = '0'; f.scrolling = 'no';
-            f.className = 'w-full h-full';
-            f.title = 'Cyril Ernest Landscapes Service Coverage in Kent, UK';
-            f.setAttribute('sandbox', 'allow-scripts allow-same-origin');
-            ph.replaceWith(f);
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map-svc', { scrollWheelZoom: false, zoomControl: true }).setView([51.27, 0.52], 9);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+                maxZoom: 19
+            }).addTo(map);
+        });
         </script>
         <div class="mt-8 flex justify-center reveal reveal-up">
             <a href="contact.html"
