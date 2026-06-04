@@ -199,6 +199,11 @@
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
                 maxZoom: 19
             }).addTo(map);
+            fetch('https://nominatim.openstreetmap.org/search?q=Kent,England&format=geojson&polygon_geojson=1&limit=1')
+                .then(function(r){ return r.json(); })
+                .then(function(data){
+                    L.geoJSON(data, { style: { color: '#df5164', weight: 2.5, fillOpacity: 0, opacity: 0.85 } }).addTo(map);
+                });
         });
         </script>
         <div class="mt-8 flex justify-center reveal reveal-up">
