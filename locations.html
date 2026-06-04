@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Where We Serve | Cyril Ernest Landscapes | Landscaping &amp; Garden Design, Kent</title>
+    <meta name="description" content="Cyril Ernest Landscapes provides expert landscaping, garden design and hard landscaping across Kent, including Maidstone, Canterbury, Tonbridge, Sevenoaks and more." />
+    <link rel="canonical" href="https://cyrilernest.co.uk/locations.html" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .reveal-card { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.5s ease-out, box-shadow 0.5s ease-out; }
+        .reveal-card.active { opacity: 1; transform: translateY(0); }
+        .loc-img-wrap { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; background: #e5e7eb; }
+        .loc-img-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+        .group:hover .loc-img-wrap img { transform: scale(1.08); }
+        .loc-card-grid { perspective: 1200px; }
+        @media (hover: hover) {
+            .group\/btn:hover .loc-btn-ripple { scale: 25; }
+            .group\/btn:hover .loc-btn-arrow { rotate: 0deg; }
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-brand-beige text-brand-text antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="flex-grow">
+
+        <!-- PAGE HEADER -->
+        <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden bg-brand-dark">
+            <div class="w-full max-w-[98rem] mx-auto px-4 sm:px-6 lg:px-10 relative z-20 text-center text-white reveal reveal-up flex flex-col items-center">
+                <span class="pill-label">Serving Kent</span>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight relative pb-6 group/h1 flex flex-col items-center">
+                    Where We Serve
+                    <span class="section-bar absolute bottom-0 left-1/2 -translate-x-1/2 w-16 md:w-20 group-hover/h1:w-32 md:group-hover/h1:w-40"></span>
+                </h1>
+                <p class="font-body text-lg lg:text-xl text-white/80 leading-relaxed max-w-2xl mt-8">These are some of the areas we cover across Kent. We work beyond this list too, so if you don't see your town, just get in touch.</p>
+            </div>
+        </section>
+
+        <!-- LOCATIONS GRID -->
+        <section class="py-16 md:py-24 bg-white border-t border-brand-dark/5">
+            <div class="w-full max-w-[98rem] mx-auto px-4 sm:px-6 lg:px-10">
+
+                <div class="loc-card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-start">
+
+                    <!-- Maidstone -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/maidstone/maidstone.jpg" alt="Maidstone" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Maidstone</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/maidstone.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Canterbury -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/canterbury/canterbury.jpg" alt="Canterbury" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Canterbury</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/canterbury.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Royal Tunbridge Wells -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/royal-tunbridge-wells/royal-tunbridge.jpg" alt="Royal Tunbridge Wells" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Royal Tunbridge Wells</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/royal-tunbridge-wells.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ashford -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/ashford/ashford.jpg" alt="Ashford" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Ashford</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/ashford.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dartford -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/dartford/dartford.jpg" alt="Dartford" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Dartford</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/dartford.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gravesend -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/gravesend/gravesend.jpg" alt="Gravesend" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Gravesend</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/gravesend.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Margate -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/margate/margate.jpg" alt="Margate" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Margate</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/margate.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Folkestone -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/folkestone/folkestone.jpg" alt="Folkestone" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Folkestone</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/folkestone.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tonbridge -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/tonbridge/tonbridge.jpg" alt="Tonbridge" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Tonbridge</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/tonbridge.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sevenoaks -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/sevenoaks/sevenoaks.jpg" alt="Sevenoaks" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Sevenoaks</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/sevenoaks.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sittingbourne -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/sittingbourne/sittingbourne.jpg" alt="Sittingbourne" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Sittingbourne</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/sittingbourne.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Chatham -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/chatham/chatham.jpg" alt="Chatham" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Chatham</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/chatham.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gillingham -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/gillingham/gillingham.jpg" alt="Gillingham" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Gillingham</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/gillingham.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rochester -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/rochester/rochester.jpg" alt="Rochester" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Rochester</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/rochester.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dover -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/dover/dover.jpg" alt="Dover" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Dover</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/dover.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ramsgate -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/ramsgate/ramsgate.jpg" alt="Ramsgate" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Ramsgate</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/ramsgate.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Whitstable -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/whitstable/whitstable.jpg" alt="Whitstable" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Whitstable</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/whitstable.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Faversham -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/faversham/faversham.jpg" alt="Faversham" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Faversham</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/faversham.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tenterden -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/tenterden/tenterden.jpg" alt="Tenterden" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">Tenterden</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/tenterden.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- West Malling -->
+                    <div class="group flex flex-col rounded-2xl overflow-hidden reveal-card hover:-translate-y-4 hover:shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-[transform,box-shadow] duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)] will-change-transform">
+                        <div class="loc-img-wrap">
+                            <img src="assets/Tony%20Best%20Pictures/location_imgs/west-malling/west-malling.jpg" alt="West Malling" loading="lazy">
+                        </div>
+                        <div class="flex flex-col p-6 bg-brand-beige group-hover:bg-brand-dark transition-colors duration-700 ease-in-out flex-1 border border-brand-dark/5">
+                            <h3 class="font-heading text-2xl font-bold text-brand-dark group-hover:text-white mb-1 transition-colors duration-700 ease-in-out">West Malling</h3>
+                            <p class="font-body text-sm text-brand-text/60 group-hover:text-white/80 mb-5 transition-colors duration-700 ease-in-out">and surrounding areas</p>
+                            <a href="location-pages/west-malling.html"
+                               class="group/btn relative inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 bg-brand-accent text-white font-body font-bold text-base rounded-full overflow-hidden transition-[background-color,color,transform] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:scale-105 hover:text-brand-dark self-start shadow-sm border-none">
+                                <span class="loc-btn-ripple absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] z-0"></span>
+                                <span class="relative z-10 transition-colors duration-500 group-hover/btn:text-brand-dark">View Location</span>
+                                <span class="relative z-10 w-10 h-10 flex items-center justify-center bg-white group-hover/btn:bg-brand-dark rounded-full transition-colors duration-500">
+                                    <svg class="loc-btn-arrow w-5 h-5 text-brand-dark group-hover/btn:text-white -rotate-45 transition-[transform,color] duration-500 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="global.js"></script>
+
+    <script>
+        (function () {
+            var els = document.querySelectorAll('.reveal-card');
+            if (!els.length) return;
+            var ob = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('active'); ob.unobserve(e.target); }
+                });
+            }, { threshold: 0.08 });
+            els.forEach(function (el) { ob.observe(el); });
+        })();
+    </script>
+
+</body>
+</html>

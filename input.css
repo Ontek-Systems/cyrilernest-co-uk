@@ -1,0 +1,287 @@
+@import "tailwindcss";
+
+/* Self-hosted Cinzel font — replaces Google Fonts dependency */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('assets/fonts/cinzel-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('assets/fonts/cinzel-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+    --color-brand-dark: #1A1A1A;
+    --color-brand-green: #16a34a;
+    --color-brand-beige: #f8f7ed;
+    --color-brand-text: #111827;
+    --color-brand-accent: #df5164;
+    
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Calibri', sans-serif;
+}
+
+body { 
+    font-family: var(--font-body); 
+    background-color: var(--color-brand-beige); 
+    color: var(--color-brand-text); 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.0;
+}
+
+/* Scroll Animations Only */
+.reveal {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal-up { transform: translateY(40px); }
+.reveal.active {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+
+/* ── Pill label: hover to darker red with black text ── */
+.pill-label {
+    display: inline-block;
+    padding: 0.375rem 1.25rem;
+    background-color: #df5164;
+    color: #ffffff;
+    border: 1px solid #df5164;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    cursor: default;
+}
+.pill-label:hover {
+    background-color: #8b1c2a;
+    color: #ffffff;
+    border-color: #8b1c2a;
+}
+
+/* ── Animated section underline bar ── */
+.section-bar {
+    display: block;
+    height: 3px;
+    background-color: #df5164;
+    border-radius: 9999px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Buttons: never stretch full-width on mobile ── */
+.site-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto !important;
+    white-space: nowrap;
+}
+
+/* ── Mobile: center all pill buttons, prevent edge-to-edge stretching ── */
+@media (max-width: 767px) {
+    .btn-pill,
+    .site-btn {
+        display: inline-flex !important;
+        width: auto !important;
+        max-width: 88vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+    }
+
+    /* Hero buttons (site-btn) — smaller text & tighter padding on mobile */
+    .site-btn {
+        font-size: 1rem !important;
+        padding-left: 1.25rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    /* Ensure wrapper divs that flex-row buttons sit in are centered */
+    .flex.flex-row.flex-wrap.gap-4,
+    .flex.flex-row.flex-wrap.gap-6 {
+        justify-content: center;
+    }
+
+    /* Service card bullet lists — prevent long labels wrapping on mobile */
+    .svc-feature-list li {
+        font-size: 0.9rem !important;
+    }
+
+    /* About "Why Choose Us" tick items — prevent text breaking on mobile */
+    .why-tick {
+        font-size: 0.9375rem !important;
+    }
+}
+
+/* Service image slideshow */
+.svc-slideshow { position: relative; overflow: hidden; }
+.svc-slideshow .svc-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.svc-slideshow .svc-slide.active { opacity: 1; }
+.svc-slideshow .svc-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svc-slideshow:hover .svc-slide img {
+    transform: scale(1.05);
+}
+.svc-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.svc-dot { width: 8px; height: 8px; border-radius: 50%; background: #1A1A1A; opacity: 0.2; cursor: pointer; transition: opacity 0.3s, transform 0.3s; border: none; padding: 0; }
+.svc-dot.active { opacity: 1; background: #df5164; transform: scale(1.3); }
+
+/* On light-top pages (gallery, thank-you), header text is dark when at top */
+#site-header.gallery-dark-nav,
+#site-header.gallery-dark-nav nav a,
+#site-header.gallery-dark-nav #menuBtn {
+    color: var(--color-brand-dark) !important;
+}
+/* Hover color on nav links when dark nav is active using dynamic variable */
+#site-header.gallery-dark-nav nav a:hover,
+#site-header.gallery-dark-nav #menuBtn:hover {
+    color: var(--color-brand-accent) !important;
+}
+
+/* Hide scrollbar for the horizontal menu but keep functionality */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+img {
+    filter: saturate(130%);
+}
+#header-logo, .qr-code, img[src*="logo"], img[src*="qrcode"] {
+    filter: saturate(1);
+}
+
+/* Masonry Grid Styles */
+#all-projects-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    #all-projects-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    #all-projects-grid {
+        column-count: 3;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #f3f4f6;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.masonry-item:hover img {
+    transform: scale(1.1);
+}
+
+.masonry-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26, 26, 26, 0.9), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+}
+
+.masonry-item:hover .masonry-overlay {
+    opacity: 1;
+}
+
+/* Category Grid Item Fixes */
+.gallery-item {
+    cursor: pointer;
+}
+
+.category-section .grid {
+    display: grid;
+}
+
+/* BA Slider Fixes */
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.ba-before {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ba-handle {
+    transition: transform 0.3s ease;
+}
+
+
+/* Masonry Lightbox Polish */
+#lightbox-img {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.masonry-overlay span {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Category Grid Polish */
+.gallery-item {
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), shadow 0.5s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+

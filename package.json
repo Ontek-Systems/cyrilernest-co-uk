@@ -1,0 +1,20 @@
+{
+  "name": "cyril-ernest-landscapes",
+  "version": "1.0.0",
+  "main": "global.js",
+  "scripts": {
+    "build": "node node_modules/@tailwindcss/cli/dist/index.mjs -i input.css -o style.css --minify",
+    "watch": "node node_modules/@tailwindcss/cli/dist/index.mjs -i input.css -o style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "dependencies": {
+    "@parcel/watcher-darwin-arm64": "^2.5.6"
+  }
+}

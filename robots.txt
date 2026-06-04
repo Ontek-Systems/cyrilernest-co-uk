@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /components/
+
+Sitemap: https://cyrilernest.co.uk/sitemap.xml
